@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { GrGallery } from "react-icons/gr";
 import { IoPersonSharp } from "react-icons/io5";
 import { GrNotes } from "react-icons/gr";
-const CenterSearchBar = () => {
+const CenterLink = () => {
   return (
     <>
       <div className="w-1/2 mt-5 flex justify-between">
@@ -27,4 +27,4 @@ const CenterSearchBar = () => {
   );
 };
 
-export default CenterSearchBar;
+export default CenterLink;

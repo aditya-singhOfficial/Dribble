@@ -1,6 +1,6 @@
 import React from "react";
 import CenterHeading from "./CenterHeading";
-import CenterSearchBar from "./CenterSearchBar";
+import CenterLink from "./CenterLink";
 import SearchBar from "./SearchBar";
 import CenterVideo from "./CenterVideo";
 
@@ -10,7 +10,7 @@ const CenterContent = () => {
       <div className="container flex">
         <div className=" px-20">
           <CenterHeading />
-          <CenterSearchBar />
+          <CenterLink />
           <SearchBar />
         </div>
         <CenterVideo/>
