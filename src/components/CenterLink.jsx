@@ -6,7 +6,7 @@ import { GrNotes } from "react-icons/gr";
 const CenterLink = () => {
   return (
     <>
-      <div className="w-1/2 mt-5 flex justify-between">
+      <div className="w-3/5 mt-5 flex justify-between">
         <NavLink
           className={`flex gap-2 items-center bg-zinc-900 py-2 px-5 text-white  rounded-full`}
           to={"/"}
@@ -14,11 +14,17 @@ const CenterLink = () => {
           <GrGallery />
           Shots
         </NavLink>
-        <NavLink className={`flex gap-2 items-center`} to={"/"}>
+        <NavLink
+          className={`flex gap-2 items-center py-2 px-5 hover:bg-zinc-100 rounded-full`}
+          to={"/"}
+        >
           <IoPersonSharp />
           Designers
         </NavLink>
-        <NavLink className={`flex gap-2 items-center`} to={"/"}>
+        <NavLink
+          className={`flex gap-2 items-center py-2 px-5 hover:bg-zinc-100 rounded-full`}
+          to={"/"}
+        >
           <GrNotes />
           Services
         </NavLink>

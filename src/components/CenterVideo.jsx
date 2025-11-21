@@ -10,7 +10,7 @@ const CenterVideo = () => {
             autoPlay
             muted
             loop
-            controls
+            className="w-full h-full object-cover"
           ></video>
         </div>
       </div>
