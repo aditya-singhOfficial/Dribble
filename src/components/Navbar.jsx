@@ -25,8 +25,8 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex gap-5">
-          <button className="font-semibold text-sm">Sign up</button>
-          <button className="py-3 px-6 font-semibold text-sm rounded-full bg-zinc-900 text-zinc-100">
+          <button className="font-semibold cursor-pointer text-sm">Sign up</button>
+          <button className="py-3 px-6 cursor-pointer font-semibold text-sm rounded-full bg-zinc-900 text-zinc-100">
             Log in
           </button>
         </div>

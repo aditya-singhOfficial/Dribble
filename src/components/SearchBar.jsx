@@ -15,17 +15,17 @@ const SearchBar = () => {
         </div>
         <div className="flex w-full px-3 pr-8 items-center gap-3">
           <h1 className="text-xs font-semibold">Popular:</h1>
-          <div className="flex justify-between w-full">
-            <h1 className="border rounded-full px-3 text-zinc-600 text-xs font-semibold py-1">
+          <div className="flex gap-4 ween w-full">
+            <h1 className="border cursor-pointer hover:bg-zinc-200 rounded-full px-3 text-zinc-600 text-xs font-semibold py-1">
               dashboard
             </h1>
-            <h1 className="border rounded-full px-3 text-zinc-600 text-xs font-semibold py-1">
+            <h1 className="border cursor-pointer hover:bg-zinc-200 rounded-full px-3 text-zinc-600 text-xs font-semibold py-1">
               landing
             </h1>
-            <h1 className="border rounded-full px-3 text-zinc-600 text-xs font-semibold py-1">
+            <h1 className="border cursor-pointer hover:bg-zinc-200 rounded-full px-3 text-zinc-600 text-xs font-semibold py-1">
               e-commerce
             </h1>
-            <h1 className="border rounded-full px-3 text-zinc-600 text-xs font-semibold py-1">
+            <h1 className="border cursor-pointer hover:bg-zinc-200 rounded-full px-3 text-zinc-600 text-xs font-semibold py-1">
               logo
             </h1>
           </div>
