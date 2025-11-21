@@ -16,7 +16,7 @@ const App = () => {
       <InstantSearch />
       <DiscoverySections />
       <SignUpSection />
-      {/* <ScrollbaleCard /> */}
+      <ScrollbaleCard />
       <Footer/>
     </div>
   );

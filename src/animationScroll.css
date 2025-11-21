@@ -1,0 +1,17 @@
+.scrollDiv {
+  animation: scrollX 4s linear infinite;
+}
+
+#mainScroll:hover .scrollDiv {
+  animation-play-state: paused;
+}
+
+@keyframes scrollX {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
