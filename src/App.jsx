@@ -417,15 +417,15 @@ const App = () => {
         handleSearchBarData={handleSearchBarData}
         searchbarData={searchbarData}
       />
-      <InstantSearch />
+       <InstantSearch />
       <DiscoverySections
         cardData={cardData}
         handleLike={handleLike}
         handleSave={handleSave}
       />
       <SignUpSection />
-      <ScrollbaleCard categoryData={categoryData} />
-      <Footer />
+     <ScrollbaleCard categoryData={categoryData} />
+       <Footer /> 
     </div>
   );
 };

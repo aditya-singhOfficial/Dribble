@@ -7,8 +7,8 @@ import CenterVideo from "./CenterVideo";
 const CenterContent = ({ searchbarData, handleSearchBarData }) => {
   return (
     <>
-      <div className="container flex">
-        <div className=" px-20">
+      <div className="container w-full flex flex-col md:flex-row">
+        <div className="px-4 w-full md:w-1/2 md:px-20">
           <CenterHeading />
           <CenterLink
             searchbarData={searchbarData}

@@ -7,7 +7,7 @@ import { FaRegHeart } from "react-icons/fa";
 const ArtWorkCard = ({ values, index, handleLike, handleSave }) => {
   return (
     <>
-      <div className="mb-4 w-[23%]">
+      <div className="mb-4 ">
         <div className="h-52 rounded-md overflow-hidden group  relative">
           <img src={values.image} className="w-full h-full object-cover" />
           <div
