@@ -1,6 +1,6 @@
 import React from "react";
 import "../animationScroll.css";
-const ScrollbaleCard = () => {
+const ScrollbaleCard = ({ categoryData }) => {
   return (
     <>
       <div
@@ -8,108 +8,60 @@ const ScrollbaleCard = () => {
         className="w-full cursor-pointer h-fit px-2 mt-8 flex overflow-hidden"
       >
         <div className={`scrollDiv flex justify-around  shrink-0`}>
-          <div className="w-1/6">
-            <div className="w-full h-44 rounded-md overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1763351759077-b5a50c283a1f?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                className="w-full h-full object-cover"
-              />
+          {categoryData.map((item) => (
+            <div className="w-1/6">
+              <div className="w-full h-44 rounded-md overflow-hidden">
+                <img
+                  src={item.image}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h1 className="mt-2">{item.title}</h1>
             </div>
-            <h1 className="mt-2">Branding</h1>
-          </div>
-          <div className="w-1/6">
-            <div className="w-full h-44 rounded-md overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1763351759077-b5a50c283a1f?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h1 className="mt-2">Branding</h1>
-          </div>
-          <div className="w-1/6">
-            <div className="w-full h-44 rounded-md overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1763351759077-b5a50c283a1f?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h1 className="mt-2">Branding</h1>
-          </div>
-          <div className="w-1/6">
-            <div className="w-full h-44 rounded-md overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1763351759077-b5a50c283a1f?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h1 className="mt-2">Branding</h1>
-          </div>
-          <div className="w-1/6">
-            <div className="w-full h-44 rounded-md overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1763351759077-b5a50c283a1f?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h1 className="mt-2">Branding</h1>
-          </div>
+          ))}
         </div>
         <div className={`scrollDiv flex justify-around  shrink-0`}>
-          <div className="w-1/6">
-            <div className="w-full h-44 rounded-md overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1763351759077-b5a50c283a1f?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                className="w-full h-full object-cover"
-              />
+          {categoryData.map((item) => (
+            <div className="w-1/6">
+              <div className="w-full h-44 rounded-md overflow-hidden">
+                <img
+                  src={item.image}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h1 className="mt-2">{item.title}</h1>
             </div>
-            <h1 className="mt-2">Branding</h1>
-          </div>
-          <div className="w-1/6">
-            <div className="w-full h-44 rounded-md overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1763351759077-b5a50c283a1f?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                className="w-full h-full object-cover"
-              />
+          ))}
+        </div>
+        <div className={`scrollDiv flex justify-around  shrink-0`}>
+          {categoryData.map((item) => (
+            <div className="w-1/6">
+              <div className="w-full h-44 rounded-md overflow-hidden">
+                <img
+                  src={item.image}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h1 className="mt-2">{item.title}</h1>
             </div>
-            <h1 className="mt-2">Branding</h1>
-          </div>
-          <div className="w-1/6">
-            <div className="w-full h-44 rounded-md overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1763351759077-b5a50c283a1f?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                className="w-full h-full object-cover"
-              />
+          ))}
+        </div>
+        <div className={`scrollDiv flex justify-around  shrink-0`}>
+          {categoryData.map((item) => (
+            <div className="w-1/6">
+              <div className="w-full h-44 rounded-md overflow-hidden">
+                <img
+                  src={item.image}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h1 className="mt-2">{item.title}</h1>
             </div>
-            <h1 className="mt-2">Branding</h1>
-          </div>
-          <div className="w-1/6">
-            <div className="w-full h-44 rounded-md overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1763351759077-b5a50c283a1f?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h1 className="mt-2">Branding</h1>
-          </div>
-          <div className="w-1/6">
-            <div className="w-full h-44 rounded-md overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1763351759077-b5a50c283a1f?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h1 className="mt-2">Branding</h1>
-          </div>
+          ))}
         </div>
       </div>
     </>

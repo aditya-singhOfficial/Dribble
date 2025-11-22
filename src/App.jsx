@@ -299,6 +299,78 @@ const App = () => {
     },
   ];
 
+  const searchBaraData = [
+    {
+      btnName: "Shots",
+      placeholder: "What type of design are you interested in?",
+      tags: [
+        "dashboard",
+        "landing page",
+        "e-commerce",
+        "logo",
+        "card",
+        "icons",
+      ],
+      isVisible: true,
+      isActive: true,
+    },
+    {
+      btnName: "Designers",
+      placeholder: "What type of designer do you need?",
+      tags: [
+        "app design",
+        "landing page",
+        "web design",
+        "dashboard",
+        "logo design",
+      ],
+      isVisible: false,
+      isActive: false,
+    },
+    {
+      btnName: "Services",
+      placeholder: "What do you need designed?",
+      tags: [
+        "branding",
+        "logo design",
+        "mobile app",
+        "illustration",
+        "animation",
+      ],
+      isVisible: false,
+      isActive: false,
+    },
+  ];
+
+  const categories = [
+    {
+      title: "Illustration",
+      image:
+        "https://cdn.dribbble.com/userupload/45061726/file/still-cfc1804383dd4aa5a4b61b5341304c30.png?format=webp&resize=320x240&vertical=center 320w, https://cdn.dribbble.com/userupload/45061726/file/still-cfc1804383dd4aa5a4b61b5341304c30.png?format=webp&resize=400x300&vertical=center 400w, https://cdn.dribbble.com/userupload/45061726/file/still-cfc1804383dd4aa5a4b61b5341304c30.png?format=webp&resize=640x480&vertical=center 640w, https://cdn.dribbble.com/userupload/45061726/file/still-cfc1804383dd4aa5a4b61b5341304c30.png?format=webp&resize=752x564&vertical=center 752w, https://cdn.dribbble.com/userupload/45061726/file/still-cfc1804383dd4aa5a4b61b5341304c30.png?format=webp&resize=1024x768&vertical=center 1024w, https://cdn.dribbble.com/userupload/45061726/file/still-cfc1804383dd4aa5a4b61b5341304c30.png?format=webp&resize=1200x900&vertical=center 1200w, https://cdn.dribbble.com/userupload/45061726/file/still-cfc1804383dd4aa5a4b61b5341304c30.png?format=webp&resize=1504x1128&vertical=center 1504w, https://cdn.dribbble.com/userupload/45061726/file/still-cfc1804383dd4aa5a4b61b5341304c30.png?format=webp&resize=2048x1536&vertical=center 2048w, https://cdn.dribbble.com/userupload/45061726/file/still-cfc1804383dd4aa5a4b61b5341304c30.png?format=webp&resize=317x238&vertical=center 317w, https://cdn.dribbble.com/userupload/45061726/file/still-cfc1804383dd4aa5a4b61b5341304c30.png?format=webp&resize=634x476&vertical=center 634w, https://cdn.dribbble.com/userupload/45061726/file/still-cfc1804383dd4aa5a4b61b5341304c30.png?format=webp&resize=200x150&vertical=center 200w",
+    },
+    {
+      title: "Typography",
+      image:
+        "https://cdn.dribbble.com/userupload/43838672/file/original-d6313eb40eac20ba2f4dd8638b3067cf.jpg?format=webp&resize=320x240&vertical=center 320w, https://cdn.dribbble.com/userupload/43838672/file/original-d6313eb40eac20ba2f4dd8638b3067cf.jpg?format=webp&resize=400x300&vertical=center 400w, https://cdn.dribbble.com/userupload/43838672/file/original-d6313eb40eac20ba2f4dd8638b3067cf.jpg?format=webp&resize=640x480&vertical=center 640w, https://cdn.dribbble.com/userupload/43838672/file/original-d6313eb40eac20ba2f4dd8638b3067cf.jpg?format=webp&resize=752x564&vertical=center 752w, https://cdn.dribbble.com/userupload/43838672/file/original-d6313eb40eac20ba2f4dd8638b3067cf.jpg?format=webp&resize=1024x768&vertical=center 1024w, https://cdn.dribbble.com/userupload/43838672/file/original-d6313eb40eac20ba2f4dd8638b3067cf.jpg?format=webp&resize=1200x900&vertical=center 1200w, https://cdn.dribbble.com/userupload/43838672/file/original-d6313eb40eac20ba2f4dd8638b3067cf.jpg?format=webp&resize=1504x1128&vertical=center 1504w, https://cdn.dribbble.com/userupload/43838672/file/original-d6313eb40eac20ba2f4dd8638b3067cf.jpg?format=webp&resize=2048x1536&vertical=center 2048w, https://cdn.dribbble.com/userupload/43838672/file/original-d6313eb40eac20ba2f4dd8638b3067cf.jpg?format=webp&resize=317x238&vertical=center 317w, https://cdn.dribbble.com/userupload/43838672/file/original-d6313eb40eac20ba2f4dd8638b3067cf.jpg?format=webp&resize=634x476&vertical=center 634w, https://cdn.dribbble.com/userupload/43838672/file/original-d6313eb40eac20ba2f4dd8638b3067cf.jpg?format=webp&resize=200x150&vertical=center 200w",
+    },
+    {
+      title: "Branding",
+      image:
+        "https://cdn.dribbble.com/userupload/43200390/file/original-ade45dbb987e40dd76cad00f5cc7be23.png?crop=0x0-2400x1800&format=webp&resize=320x240&vertical=center 320w, https://cdn.dribbble.com/userupload/43200390/file/original-ade45dbb987e40dd76cad00f5cc7be23.png?crop=0x0-2400x1800&format=webp&resize=400x300&vertical=center 400w, https://cdn.dribbble.com/userupload/43200390/file/original-ade45dbb987e40dd76cad00f5cc7be23.png?crop=0x0-2400x1800&format=webp&resize=640x480&vertical=center 640w, https://cdn.dribbble.com/userupload/43200390/file/original-ade45dbb987e40dd76cad00f5cc7be23.png?crop=0x0-2400x1800&format=webp&resize=752x564&vertical=center 752w, https://cdn.dribbble.com/userupload/43200390/file/original-ade45dbb987e40dd76cad00f5cc7be23.png?crop=0x0-2400x1800&format=webp&resize=1024x768&vertical=center 1024w, https://cdn.dribbble.com/userupload/43200390/file/original-ade45dbb987e40dd76cad00f5cc7be23.png?crop=0x0-2400x1800&format=webp&resize=1200x900&vertical=center 1200w, https://cdn.dribbble.com/userupload/43200390/file/original-ade45dbb987e40dd76cad00f5cc7be23.png?crop=0x0-2400x1800&format=webp&resize=1504x1128&vertical=center 1504w, https://cdn.dribbble.com/userupload/43200390/file/original-ade45dbb987e40dd76cad00f5cc7be23.png?crop=0x0-2400x1800&format=webp&resize=2048x1536&vertical=center 2048w, https://cdn.dribbble.com/userupload/43200390/file/original-ade45dbb987e40dd76cad00f5cc7be23.png?crop=0x0-2400x1800&format=webp&resize=317x238&vertical=center 317w, https://cdn.dribbble.com/userupload/43200390/file/original-ade45dbb987e40dd76cad00f5cc7be23.png?crop=0x0-2400x1800&format=webp&resize=634x476&vertical=center 634w, https://cdn.dribbble.com/userupload/43200390/file/original-ade45dbb987e40dd76cad00f5cc7be23.png?crop=0x0-2400x1800&format=webp&resize=200x150&vertical=center 200w",
+    },
+    {
+      title: "Web Design",
+      image:
+        "https://cdn.dribbble.com/userupload/45319531/file/still-d222504340fc2c4acb1337407feaf4e4.png?format=webp&resize=320x240&vertical=center 320w, https://cdn.dribbble.com/userupload/45319531/file/still-d222504340fc2c4acb1337407feaf4e4.png?format=webp&resize=400x300&vertical=center 400w, https://cdn.dribbble.com/userupload/45319531/file/still-d222504340fc2c4acb1337407feaf4e4.png?format=webp&resize=640x480&vertical=center 640w, https://cdn.dribbble.com/userupload/45319531/file/still-d222504340fc2c4acb1337407feaf4e4.png?format=webp&resize=752x564&vertical=center 752w, https://cdn.dribbble.com/userupload/45319531/file/still-d222504340fc2c4acb1337407feaf4e4.png?format=webp&resize=1024x768&vertical=center 1024w, https://cdn.dribbble.com/userupload/45319531/file/still-d222504340fc2c4acb1337407feaf4e4.png?format=webp&resize=1200x900&vertical=center 1200w, https://cdn.dribbble.com/userupload/45319531/file/still-d222504340fc2c4acb1337407feaf4e4.png?format=webp&resize=1504x1128&vertical=center 1504w, https://cdn.dribbble.com/userupload/45319531/file/still-d222504340fc2c4acb1337407feaf4e4.png?format=webp&resize=2048x1536&vertical=center 2048w, https://cdn.dribbble.com/userupload/45319531/file/still-d222504340fc2c4acb1337407feaf4e4.png?format=webp&resize=317x238&vertical=center 317w, https://cdn.dribbble.com/userupload/45319531/file/still-d222504340fc2c4acb1337407feaf4e4.png?format=webp&resize=634x476&vertical=center 634w, https://cdn.dribbble.com/userupload/45319531/file/still-d222504340fc2c4acb1337407feaf4e4.png?format=webp&resize=200x150&vertical=center 200w",
+    },
+    {
+      title: "Mobile",
+      image:
+        "https://cdn.dribbble.com/userupload/16047520/file/original-316d435ea42f78653e25af2e6bc47743.jpg?format=webp&resize=320x240&vertical=center 320w, https://cdn.dribbble.com/userupload/16047520/file/original-316d435ea42f78653e25af2e6bc47743.jpg?format=webp&resize=400x300&vertical=center 400w, https://cdn.dribbble.com/userupload/16047520/file/original-316d435ea42f78653e25af2e6bc47743.jpg?format=webp&resize=640x480&vertical=center 640w, https://cdn.dribbble.com/userupload/16047520/file/original-316d435ea42f78653e25af2e6bc47743.jpg?format=webp&resize=752x564&vertical=center 752w, https://cdn.dribbble.com/userupload/16047520/file/original-316d435ea42f78653e25af2e6bc47743.jpg?format=webp&resize=1024x768&vertical=center 1024w, https://cdn.dribbble.com/userupload/16047520/file/original-316d435ea42f78653e25af2e6bc47743.jpg?format=webp&resize=1200x900&vertical=center 1200w, https://cdn.dribbble.com/userupload/16047520/file/original-316d435ea42f78653e25af2e6bc47743.jpg?format=webp&resize=1504x1128&vertical=center 1504w, https://cdn.dribbble.com/userupload/16047520/file/original-316d435ea42f78653e25af2e6bc47743.jpg?format=webp&resize=2048x1536&vertical=center 2048w, https://cdn.dribbble.com/userupload/16047520/file/original-316d435ea42f78653e25af2e6bc47743.jpg?format=webp&resize=317x238&vertical=center 317w, https://cdn.dribbble.com/userupload/16047520/file/original-316d435ea42f78653e25af2e6bc47743.jpg?format=webp&resize=634x476&vertical=center 634w, https://cdn.dribbble.com/userupload/16047520/file/original-316d435ea42f78653e25af2e6bc47743.jpg?format=webp&resize=200x150&vertical=center 200w",
+    },
+  ];
+
+  const [cardData, setCardData] = useState(artWorkCards);
   const handleLike = (id) => {
     setCardData((prev) => {
       return prev.map((item, index) => {
@@ -312,7 +384,6 @@ const App = () => {
       });
     });
   };
-
   const handleSave = (id) => {
     setCardData((previous) => {
       return previous.map((item, index) => {
@@ -326,13 +397,26 @@ const App = () => {
       });
     });
   };
-  const [cardData, setCardData] = useState(artWorkCards);
 
+  const [searchbarData, setSearchbarData] = useState(searchBaraData);
+  const handleSearchBarData = (id) => {
+    setSearchbarData((previousSearchBar) => {
+      return previousSearchBar.map((item, index) => {
+        return index == id
+          ? { ...item, isVisible: true, isActive: true }
+          : { ...item, isVisible: false, isActive: false };
+      });
+    });
+  };
+
+  const [categoryData, setCategoryData] = useState(categories);
   return (
     <div>
       <Navbar />
-      <CenterContent />
-      
+      <CenterContent
+        handleSearchBarData={handleSearchBarData}
+        searchbarData={searchbarData}
+      />
       <InstantSearch />
       <DiscoverySections
         cardData={cardData}
@@ -340,7 +424,7 @@ const App = () => {
         handleSave={handleSave}
       />
       <SignUpSection />
-      <ScrollbaleCard />
+      <ScrollbaleCard categoryData={categoryData} />
       <Footer />
     </div>
   );

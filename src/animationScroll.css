@@ -1,5 +1,5 @@
 .scrollDiv {
-  animation: scrollX 4s linear infinite;
+  animation: scrollX 10s linear infinite;
 }
 
 #mainScroll:hover .scrollDiv {
