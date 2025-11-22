@@ -3,9 +3,9 @@ import { IoSearchSharp } from "react-icons/io5";
 const SearchBar = ({ searchbarData }) => {
   return (
     <>
-      {searchbarData.map((item) =>
+      {searchbarData.map((item,index) =>
         item.isVisible ? (
-          <div className="w-10/12 mt-4 flex flex-col gap-4">
+          <div key={index} className="w-10/12 mt-4 flex flex-col gap-4">
             <div className="rounded-full relative mt-4 bg-zinc-100">
               <input
                 type="text"
@@ -18,8 +18,8 @@ const SearchBar = ({ searchbarData }) => {
             <div className="flex w-full px-3 pr-8 items-center gap-3">
               <h1 className="text-xs font-semibold">Popular:</h1>
               <div className="flex gap-4   w-full">
-                {item.tags.map((item) => (
-                  <h1 className="border whitespace-nowrap cursor-pointer hover:bg-zinc-200 rounded-full px-3 text-zinc-600 text-xs font-semibold py-1">
+                {item.tags.map((item,index) => (
+                  <h1 key={index} className="border whitespace-nowrap cursor-pointer hover:bg-zinc-200 rounded-full px-3 text-zinc-600 text-xs font-semibold py-1">
                     {item}
                   </h1>
                 ))}
@@ -27,7 +27,7 @@ const SearchBar = ({ searchbarData }) => {
             </div>
           </div>
         ) : (
-          <div></div>
+          ""
         )
       )}
     </>

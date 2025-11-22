@@ -8,8 +8,8 @@ const ScrollbaleCard = ({ categoryData }) => {
         className="w-full cursor-pointer h-fit px-2 mt-8 flex overflow-hidden"
       >
         <div className={`scrollDiv flex justify-around  shrink-0`}>
-          {categoryData.map((item) => (
-            <div className="w-1/6">
+          {categoryData.map((item,index) => (
+            <div key={index} className="w-1/6">
               <div className="w-full h-44 rounded-md overflow-hidden">
                 <img
                   src={item.image}
@@ -22,8 +22,8 @@ const ScrollbaleCard = ({ categoryData }) => {
           ))}
         </div>
         <div className={`scrollDiv flex justify-around  shrink-0`}>
-          {categoryData.map((item) => (
-            <div className="w-1/6">
+          {categoryData.map((item,index) => (
+            <div key={index} className="w-1/6">
               <div className="w-full h-44 rounded-md overflow-hidden">
                 <img
                   src={item.image}
@@ -36,8 +36,8 @@ const ScrollbaleCard = ({ categoryData }) => {
           ))}
         </div>
         <div className={`scrollDiv flex justify-around  shrink-0`}>
-          {categoryData.map((item) => (
-            <div className="w-1/6">
+          {categoryData.map((item,index) => (
+            <div key={index} className="w-1/6">
               <div className="w-full h-44 rounded-md overflow-hidden">
                 <img
                   src={item.image}
@@ -50,8 +50,8 @@ const ScrollbaleCard = ({ categoryData }) => {
           ))}
         </div>
         <div className={`scrollDiv flex justify-around  shrink-0`}>
-          {categoryData.map((item) => (
-            <div className="w-1/6">
+          {categoryData.map((item,index) => (
+            <div key={index} className="w-1/6">
               <div className="w-full h-44 rounded-md overflow-hidden">
                 <img
                   src={item.image}
