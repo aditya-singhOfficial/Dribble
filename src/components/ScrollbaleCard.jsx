@@ -1,5 +1,5 @@
 import React from "react";
-import styleScroll from "../animationScroll.css";
+import "../animationScroll.css";
 const ScrollbaleCard = () => {
   return (
     <>
@@ -7,9 +7,7 @@ const ScrollbaleCard = () => {
         id="mainScroll"
         className="w-full cursor-pointer h-fit px-2 mt-8 flex overflow-hidden"
       >
-        <div
-          className={`${styleScroll.scrollDiv} flex justify-around  shrink-0`}
-        >
+        <div className={`scrollDiv flex justify-around  shrink-0`}>
           <div className="w-1/6">
             <div className="w-full h-44 rounded-md overflow-hidden">
               <img
@@ -61,9 +59,7 @@ const ScrollbaleCard = () => {
             <h1 className="mt-2">Branding</h1>
           </div>
         </div>
-        <div
-          className={`${styleScroll.scrollDiv} flex justify-around  shrink-0`}
-        >
+        <div className={`scrollDiv flex justify-around  shrink-0`}>
           <div className="w-1/6">
             <div className="w-full h-44 rounded-md overflow-hidden">
               <img

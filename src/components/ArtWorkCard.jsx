@@ -4,43 +4,64 @@ import { FaEye } from "react-icons/fa";
 import { CiBookmark } from "react-icons/ci";
 import { FaRegHeart } from "react-icons/fa";
 
-const ArtWorkCard = () => {
+const ArtWorkCard = ({ values, index, handleLike, handleSave }) => {
   return (
     <>
-      <div className="mb-4 cursor-pointer">
+      <div className="mb-4 w-[23%]">
         <div className="h-52 rounded-md overflow-hidden group  relative">
-          <img
-            src="https://images.unsplash.com/photo-1763386840769-8484a2a02442?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="img"
-            className="w-full h-full object-cover"
-          />
+          <img src={values.image} className="w-full h-full object-cover" />
           <div
             className="absolute  flex justify-between items-center pl-2 pr-4 w-full h-[40%] bg-[#00000051] bottom-0 left-0 opacity-0 group-hover:opacity-100 
             translate-y-4 group-hover:translate-y-0
             transition-all duration-300 ease-in-out"
           >
-            <h1 className="text-white text-2xl ">Some Logos</h1>
+            <h1 className="text-white text-xl ">{values.title}</h1>
             <div className="flex gap-4">
-              <CiBookmark className="text-black text-4xl bg-zinc-200 rounded-full border p-2 " />
-              <FaRegHeart className="text-black text-4xl bg-zinc-200  rounded-full border p-2 " />
+              <button
+                className="cursor-pointer"
+                onClick={() => {
+                  handleSave(index);
+                }}
+              >
+                <CiBookmark
+                  className={`text-black font-semibold text-4xl ${
+                    values.isSaved ? ["bg-black","text-white","border-none"].join(" ") : "bg-zinc-200"
+                  } rounded-full border p-2`}
+                />
+              </button>
+
+              <button
+                className="cursor-pointer"
+                onClick={() => {
+                  handleLike(index);
+                }}
+              >
+                <FaRegHeart
+                  className={`text-black text-4xl ${
+                    values.isLiked
+                      ? ["bg-red-900", "text-white", "border-none"].join(" ")
+                      : "bg-zinc-200"
+                  } rounded-full border p-2`}
+                />
+              </button>
             </div>
           </div>
         </div>
         <div className="flex justify-between px-1 pr-2">
           <div className="flex gap-2 items-center mt-2">
-            <p>Nixtio</p>
+            <p>{values.author}</p>
             <p className="uppercase text-xs bg-zinc-300 p-1 rounded-md font-semibold text-white text-[9px]">
-              team
+              {values.isPro ? "Pro" : "team"}
             </p>
           </div>
           <div className="flex gap-4 mt-1">
             <p className="flex items-center gap-0.5">
               <CiHeart />
-              199
+              {values.likes}
             </p>
-            <p className="flex items-center gap-0.5">
+            <p className="flex items-center gap-1.5">
               <FaEye />
-              4.7k
+              {values.views}
             </p>
           </div>
         </div>
